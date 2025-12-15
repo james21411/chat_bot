@@ -1,0 +1,25 @@
+name: Thieboudienne
+
+description: Plat national du Sénégal, c'est un riz au poisson cuit dans une sauce tomate riche avec divers légumes (chou, carotte, manioc, aubergine, gombo...).
+
+recipe:
+
+    Préparer une farce ("Rof") avec piment, ail, persil, poivre, bouillon cube, et farcir des morceaux de poisson (souvent du thiof).
+
+    Faire frire le poisson farci dans de l'huile, puis le réserver.
+
+    Dans la même huile, faire revenir oignons, ail, puis ajouter du concentré de tomates et laisser "dorer".
+
+    Ajouter de l'eau, les légumes coupés en gros morceaux, le poisson frit, et des épices (laurier, nététou - si utilisé).
+
+    Laisser mijoter jusqu'à ce que les légumes et le poisson soient cuits.
+
+    Retirer le poisson et les légumes.
+
+    Ajouter le riz (souvent du riz brisé) dans le bouillon restant et laisser cuire à l'étouffée jusqu'à absorption complète.
+
+    Servir le riz nappé des légumes et du poisson.
+
+origin: Sénégal.
+
+preparation_time: 2h - 3h

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Koki",
+    "description": "A Cameroonian steamed bean cake made from black-eyed peas or cowpeas, wrapped in banana leaves and cooked until firm. It's a popular snack or side dish.",
+    "ingredients": [
+      "Black-eyed peas",
+      "Onions",
+      "Palm oil",
+      "Salt",
+      "Chili peppers",
+      "Banana leaves"
+    ],
+    "recipe": [
+      "Soak the black-eyed peas overnight, then grind them into a smooth paste.",
+      "Mix the paste with finely chopped onions, palm oil, salt, and chopped chili peppers.",
+      "Spoon the mixture onto banana leaves and wrap them securely.",
+      "Steam the wrapped packages for about 45 minutes until firm.",
+      "Unwrap and serve hot as a snack or side dish."
+    ],
+    "origin": "Cameroon",
+    "preparation_time": "1h"
+  }
+]

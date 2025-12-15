@@ -1,0 +1,86 @@
+- name: Ugali
+  description: Bouillie épaisse de farine de maïs, accompagnement principal en Afrique de l’Est.
+  recipe:
+    - Faire bouillir de l’eau.
+    - Ajouter progressivement la farine de maïs en remuant.
+    - Cuire jusqu’à obtenir une pâte ferme.
+  origin: Kenya, Tanzanie
+  preparation_time: 1h30
+
+- name: Nyama_Choma
+  description: Viande grillée (souvent chèvre ou bœuf), servie avec du kachumbari.
+  recipe:
+    - Mariner la viande avec des épices.
+    - Griller sur charbon de bois.
+    - Servir avec salade de tomates et oignons.
+  origin: Kenya
+  preparation_time: 1h30
+
+- name: Injera_avec_Doro_Wat
+  description: Crêpe fermentée accompagnée d’un ragoût épicé de poulet.
+  recipe:
+    - Préparer la pâte d’injera avec de la farine de teff.
+    - Cuire sur une plaque chaude.
+    - Préparer le Doro Wat avec poulet, berbere, oignons et œufs.
+  origin: Éthiopie
+  preparation_time: 1h30
+
+- name: Matoke
+  description: Banane plantain cuite et écrasée, souvent avec viande ou légumes.
+  recipe:
+    - Éplucher et cuire les bananes plantains.
+    - Écraser et mijoter avec oignons, tomates et viande.
+  origin: Ouganda
+  preparation_time: 1h30
+
+- name: Pilau
+  description: Riz épicé avec viande, souvent servi lors de fêtes.
+  recipe:
+    - Faire revenir oignons, ail, gingembre et épices.
+    - Ajouter viande et riz.
+    - Cuire avec bouillon jusqu’à absorption.
+  origin: Afrique de l’Est
+  preparation_time: 1h30
+
+- name: Pap_et_Chakalaka
+  description: Bouillie de maïs accompagnée d’un mélange de légumes épicés.
+  recipe:
+    - Cuire la farine de maïs pour le pap.
+    - Préparer le chakalaka avec carottes, haricots, tomates et épices.
+  origin: Afrique du Sud
+  preparation_time: 1h30
+
+- name: Bunny_Chow
+  description: Pain évidé rempli de curry épicé.
+  recipe:
+    - Préparer un curry de viande ou légumes.
+    - Évider un pain et le remplir de curry.
+  origin: Afrique du Sud
+  preparation_time: 1h30
+
+- name: Sadza
+  description: Bouillie de maïs semblable à l’ugali, servie avec viande ou légumes.
+  recipe:
+    - Faire bouillir de l’eau.
+    - Ajouter farine de maïs en remuant.
+    - Servir avec sauce ou viande.
+  origin: Zimbabwe
+  preparation_time: 1h30
+
+- name: Seswaa
+  description: Viande de bœuf ou chèvre longuement mijotée et effilochée.
+  recipe:
+    - Cuire la viande avec sel et oignons.
+    - Effilocher et servir avec bouillie de maïs.
+  origin: Botswana
+  preparation_time: 1h30
+
+- name: Boerewors
+  description: Saucisse épicée grillée, souvent servie au barbecue.
+  recipe:
+    - Préparer ou acheter la saucisse.
+    - Griller sur feu de bois.
+    - Servir avec pap ou pain.
+  origin: Afrique du Sud
+  preparation_time: 1h30
+

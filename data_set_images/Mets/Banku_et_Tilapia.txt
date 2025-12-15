@@ -1,0 +1,23 @@
+name: Banku_et_Tilapia
+
+description: Plat ghanéen très apprécié composé de Banku (pâte fermentée de maïs et de manioc) servi avec du Tilapia grillé et une sauce piment (shito) ou une sauce tomate-oignon.
+
+recipe:
+
+    (Banku) Mélanger la pâte de maïs fermentée et la pâte de manioc (ou farines) avec de l'eau salée.
+
+    Cuire à feu moyen en remuant constamment avec une spatule en bois jusqu'à ce que le mélange épaississe et devienne une pâte lisse et cuite.
+
+    Former des boules.
+
+    (Tilapia) Nettoyer, écailler et inciser le poisson.
+
+    Mariner le poisson avec un mélange d'épices (gingembre, ail, oignon, piment, sel).
+
+    Griller le poisson au barbecue, au four ou à la poêle jusqu'à ce qu'il soit bien cuit.
+
+    Servir le Banku avec le Tilapia grillé et une sauce piment/tomate.
+
+origin: Ghana.
+
+preparation_time: 1h30 - 2h (incluant marinade et cuisson)

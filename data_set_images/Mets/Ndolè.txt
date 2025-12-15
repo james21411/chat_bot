@@ -1,0 +1,25 @@
+name: Ndolè
+
+description: Plat camerounais à base de feuilles amères (ndolé), pâte d’arachide, et souvent garni de crevettes, poisson fumé ou viande.
+
+recipe:
+
+    Faire bouillir les feuilles de ndolé (fraîches ou séchées) plusieurs fois pour enlever l'amertume, puis les égoutter et les hacher.
+
+    Cuire la viande ou le poisson fumé. Réserver le bouillon.
+
+    Mixer les arachides crues avec de l'ail, des oignons et un peu d'eau pour obtenir une pâte.
+
+    Faire revenir des oignons émincés dans de l'huile.
+
+    Ajouter la pâte d'arachide et un peu de bouillon, laisser cuire quelques minutes en remuant.
+
+    Incorporer les feuilles de ndolé hachées.
+
+    Ajouter la viande/poisson et les crevettes.
+
+    Laisser mijoter à feu doux environ 30-45 minutes jusqu'à ce que la sauce épaississe.
+
+origin: Cameroun (spécifiquement de la région du Littoral, Douala).
+
+preparation_time: 1h30 - 2h

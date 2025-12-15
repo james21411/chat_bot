@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Nourriture - 3 Modes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .modes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+        
+        .mode-card {
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mode-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+        }
+        
+        .mode-card.active {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+        
+        .mode-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .mode-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .mode-desc {
+            color: #6c757d;
+            line-height: 1.5;
+        }
+        
+        .form-section {
+            display: none;
+            padding: 30px 40px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .form-section.active {
+            display: block;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #495057;
+        }
+        
+        .form-group input[type="file"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input[type="file"]:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .image-preview {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 8px;
+            margin: 10px 0;
+            display: none;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        
+        .result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        
+        .result.loading {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+        }
+        
+        .api-status {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .api-status.online {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .api-status.offline {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="api-status" id="apiStatus">🔴 API Non Connectée</div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>🍽️ Chatbot Nourriture</h1>
+            <p>3 modes simples pour analyser vos plats africains et maghrébins</p>
+        </div>
+        
+        <div class="modes">
+            <!-- Mode 1: Image Seule -->
+            <div class="mode-card" onclick="selectMode('image')">
+                <span class="mode-icon">🖼️</span>
+                <div class="mode-title">Reconnaissance d'Image</div>
+                <div class="mode-desc">Téléchargez une image pour identifier le plat automatiquement</div>
+            </div>
+            
+            <!-- Mode 2: Texte Seule -->
+            <div class="mode-card" onclick="selectMode('text')">
+                <span class="mode-icon">💬</span>
+                <div class="mode-title">Chat Texte</div>
+                <div class="mode-desc">Posez vos questions sur la cuisine africaine à notre expert</div>
+            </div>
+            
+            <!-- Mode 3: Image + Texte -->
+            <div class="mode-card" onclick="selectMode('combined')">
+                <span class="mode-icon">🍽️</span>
+                <div class="mode-title">Image + Chat</div>
+                <div class="mode-desc">Analysez une image ET posez une question dessus</div>
+            </div>
+        </div>
+        
+        <!-- Formulaire Image Seule -->
+        <div class="form-section" id="image-form">
+            <h3>🖼️ Reconnaissance d'Image</h3>
+            <div class="form-group">
+                <label for="image-file">Choisissez une image de plat :</label>
+                <input type="file" id="image-file" accept="image/*" onchange="previewImage('image-file', 'image-preview')">
+                <img id="image-preview" class="image-preview">
+            </div>
+            <button class="btn" onclick="sendImageOnly()">🔍 Analyser l'Image</button>
+            <div id="image-result" class="result"></div>
+        </div>
+        
+        <!-- Formulaire Texte Seule -->
+        <div class="form-section" id="text-form">
+            <h3>💬 Chat Texte</h3>
+            <div class="form-group">
+                <label for="chat-text">Votre question :</label>
+                <textarea id="chat-text" placeholder="Ex: Quels sont les ingrédients du Jollof Rice ?"></textarea>
+            </div>
+            <button class="btn" onclick="sendTextOnly()">💬 Poser la Question</button>
+            <div id="text-result" class="result"></div>
+        </div>
+        
+        <!-- Formulaire Image + Texte -->
+        <div class="form-section" id="combined-form">
+            <h3>🍽️ Analyse Image + Chat</h3>
+            <div class="form-group">
+                <label for="combined-image">Choisissez une image :</label>
+                <input type="file" id="combined-image" accept="image/*" onchange="previewImage('combined-image', 'combined-preview')">
+                <img id="combined-preview" class="image-preview">
+            </div>
+            <div class="form-group">
+                <label for="combined-text">Votre question sur l'image :</label>
+                <textarea id="combined-text" placeholder="Ex: Quel plat est-ce et quels sont ses ingrédients ?"></textarea>
+            </div>
+            <button class="btn" onclick="sendCombined()">🔍 Analyser et Répondre</button>
+            <div id="combined-result" class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+        let selectedMode = null;
+
+        // Vérifier l'état de l'API au chargement
+        window.onload = async function() {
+            await checkAPIStatus();
+        };
+
+        // Vérifier si l'API est accessible
+        async function checkAPIStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/health`);
+                const status = document.getElementById('apiStatus');
+                
+                if (response.ok) {
+                    status.textContent = '🟢 API Connectée';
+                    status.className = 'api-status online';
+                } else {
+                    throw new Error('API non accessible');
+                }
+            } catch (error) {
+                const status = document.getElementById('apiStatus');
+                status.textContent = '🔴 API Non Connectée';
+                status.className = 'api-status offline';
+            }
+        }
+
+        // Sélectionner un mode
+        function selectMode(mode) {
+            // Retirer la classe active de toutes les cartes
+            document.querySelectorAll('.mode-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            // Masquer tous les formulaires
+            document.querySelectorAll('.form-section').forEach(form => {
+                form.classList.remove('active');
+            });
+            
+            // Activer la carte sélectionnée
+            event.currentTarget.classList.add('active');
+            
+            // Afficher le formulaire correspondant
+            if (mode === 'image') {
+                document.getElementById('image-form').classList.add('active');
+            } else if (mode === 'text') {
+                document.getElementById('text-form').classList.add('active');
+            } else if (mode === 'combined') {
+                document.getElementById('combined-form').classList.add('active');
+            }
+            
+            selectedMode = mode;
+        }
+
+        // Prévisualiser l'image
+        function previewImage(inputId, previewId) {
+            const input = document.getElementById(inputId);
+            const preview = document.getElementById(previewId);
+            
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Afficher le résultat
+        function showResult(elementId, content, type = 'loading') {
+            const element = document.getElementById(elementId);
+            element.className = `result ${type}`;
+            element.innerHTML = content;
+            element.style.display = 'block';
+        }
+
+        // Envoyer image seule → POST /predict
+        async function sendImageOnly() {
+            const fileInput = document.getElementById('image-file');
+            if (!fileInput.files[0]) {
+                showResult('image-result', '⚠️ Veuillez sélectionner une image', 'error');
+                return;
+            }
+
+            showResult('image-result', '⏳ Analyse en cours...', 'loading');
+
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            try {
+                const response = await fetch(`${API_BASE}/predict`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showResult('image-result', `
+                        <h4>✅ Résultat de la Reconnaissance</h4>
+                        <p><strong>🍽️ Plat identifié :</strong> ${result.predicted_class.replace('_', ' ')}</p>
+                        <p><strong>🎯 Confiance :</strong> ${(result.confidence * 100).toFixed(1)}%</p>
+                        ${result.food_info ? `
+                            <p><strong>🌍 Origine :</strong> ${result.food_info.origin || 'Non spécifiée'}</p>
+                            <p><strong>📝 Description :</strong> ${result.food_info.description || 'Aucune description disponible'}</p>
+                        ` : ''}
+                        <small>🕒 ${new Date(result.timestamp).toLocaleString()}</small>
+                    `, 'success');
+                } else {
+                    showResult('image-result', `❌ Erreur: ${result.detail || 'Erreur inconnue'}`, 'error');
+                }
+            } catch (error) {
+                showResult('image-result', `❌ Erreur de connexion: ${error.message}`, 'error');
+            }
+        }
+
+        // Envoyer texte seule → POST /chat/text
+        async function sendTextOnly() {
+            const text = document.getElementById('chat-text').value.trim();
+            if (!text) {
+                showResult('text-result', '⚠️ Veuillez poser une question', 'error');
+                return;
+            }
+
+            showResult('text-result', '⏳ Génération de la réponse...', 'loading');
+
+            try {
+                const response = await fetch(`${API_BASE}/chat/text`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ text: text })
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showResult('text-result', `
+                        <h4>✅ Réponse de l'Expert</h4>
+                        <div style="white-space: pre-wrap; line-height: 1.6;">${result.response}</div>
+                        <small>🕒 ${new Date(result.timestamp).toLocaleString()}</small>
+                    `, 'success');
+                } else {
+                    showResult('text-result', `❌ Erreur: ${result.detail || result.error}`, 'error');
+                }
+            } catch (error) {
+                showResult('text-result', `❌ Erreur de connexion: ${error.message}`, 'error');
+            }
+        }
+
+        // Envoyer image + texte → POST /chat/image-text
+        async function sendCombined() {
+            const fileInput = document.getElementById('combined-image');
+            const text = document.getElementById('combined-text').value.trim();
+            
+            if (!fileInput.files[0]) {
+                showResult('combined-result', '⚠️ Veuillez sélectionner une image', 'error');
+                return;
+            }
+            
+            if (!text) {
+                showResult('combined-result', '⚠️ Veuillez poser une question', 'error');
+                return;
+            }
+
+            showResult('combined-result', '⏳ Analyse en cours...', 'loading');
+
+            try {
+                // Convertir l'image en base64
+                const file = fileInput.files[0];
+                
+                // Vérifier la taille du fichier (max 10MB)
+                if (file.size > 10 * 1024 * 1024) {
+                    showResult('combined-result', '❌ Fichier trop volumineux (max 10MB)', 'error');
+                    return;
+                }
+                
+                // Convertir en base64 avec FileReader
+                const base64Image = await new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = () => {
+                        const result = reader.result;
+                        // Nettoyer le préfixe data URL si présent
+                        let cleanBase64 = result;
+                        if (result.startsWith('data:image/')) {
+                            cleanBase64 = result.split(',')[1];
+                        }
+                        resolve(cleanBase64);
+                    };
+                    reader.onerror = reject;
+                    reader.readAsDataURL(file);
+                });
+
+                console.log('Base64 length:', base64Image.length);
+                
+                // Vérifier que le base64 n'est pas vide
+                if (!base64Image || base64Image.length < 100) {
+                    showResult('combined-result', '❌ Impossible de traiter l\'image', 'error');
+                    return;
+                }
+
+                const response = await fetch(`${API_BASE}/chat/image-text`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        image: base64Image,
+                        text: text
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showResult('combined-result', `
+                        <h4>✅ Analyse Complète</h4>
+                        <div style="white-space: pre-wrap; line-height: 1.6;">${result.response}</div>
+                        ${result.prediction ? `
+                            <hr style="margin: 15px 0;">
+                            <p><strong>🎯 Prédiction du Plat :</strong> ${result.prediction.predicted_class.replace('_', ' ')} (${(result.prediction.confidence * 100).toFixed(1)}%)</p>
+                        ` : ''}
+                        <small>🕒 ${new Date(result.timestamp).toLocaleString()}</small>
+                    `, 'success');
+                } else {
+                    showResult('combined-result', `❌ Erreur: ${result.detail || result.error}`, 'error');
+                }
+            } catch (error) {
+                console.error('Erreur complète:', error);
+                showResult('combined-result', `❌ Erreur de connexion: ${error.message}`, 'error');
+            }
+        }
+    </script>
+</body>
+</html>

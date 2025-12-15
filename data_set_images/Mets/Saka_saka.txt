@@ -1,0 +1,21 @@
+name: Saka_saka
+
+description: Ragoût à base de feuilles de manioc pilées, mijotées dans de l'huile de palme avec du poisson fumé, de la viande, des oignons, et parfois du beurre d'arachide ou du lait de coco.
+
+recipe:
+
+    Laver et piler très finement les feuilles de manioc (ou utiliser des feuilles congelées déjà pilées).
+
+    Mettre les feuilles pilées dans une marmite avec un peu d'eau et les faire bouillir longuement (au moins 1h) pour enlever la toxicité et attendrir.
+
+    Ajouter les oignons, l'ail, le poisson fumé (ou viande précuite), et l'huile de palme.
+
+    Laisser mijoter à feu doux pendant encore 1h à 2h, en remuant régulièrement.
+
+    (Optionnel) Ajouter du beurre d'arachide ou du lait de coco vers la fin pour épaissir.
+
+    Assaisonner avec sel, piment et bouillon cube.
+
+origin: Afrique Centrale (RDC, Congo-Brazzaville) et aussi présent en Afrique de l'Ouest (Sierra Leone, Libéria).
+
+preparation_time: 2h30 - 4h (principalement du temps de mijotage).

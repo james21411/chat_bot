@@ -1,0 +1,21 @@
+name: Jollof_Rice
+
+description: Plat de riz très populaire en Afrique de l'Ouest, cuit dans une sauce à base de tomates, poivrons, oignons et épices.
+
+recipe:
+
+    Préparer une base de sauce en mixant tomates, poivrons, oignons et piments.
+
+    Faire revenir des oignons émincés dans de l'huile, ajouter du concentré de tomates, puis la sauce mixée et les épices (thym, curry, laurier, bouillon cube).
+
+    Laisser mijoter la sauce pour qu'elle réduise.
+
+    Ajouter le riz (préalablement lavé) à la sauce, bien mélanger.
+
+    Ajouter du bouillon ou de l'eau juste assez pour couvrir le riz.
+
+    Couvrir hermétiquement et laisser cuire à feu très doux jusqu'à ce que le riz soit cuit et ait absorbé toute la sauce.
+
+origin: Afrique de l'Ouest (Sénégal/Gambie, mais revendiqué par plusieurs pays comme le Nigeria et le Ghana).
+
+preparation_time: 1h - 1h30

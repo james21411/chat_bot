@@ -1,0 +1,19 @@
+name: Fufu
+
+description: Pâte ou boule compacte et élastique à base de tubercules bouillis et pilés (manioc, igname, plantain) ou de farines délayées (maïs, manioc). Sert d'accompagnement principal pour les sauces.
+
+recipe:
+
+    (Version traditionnelle) Éplucher, laver et couper les tubercules (ex: manioc et plantains).
+
+    Les faire bouillir jusqu'à ce qu'ils soient tendres.
+
+    Égoutter et piler vigoureusement dans un mortier jusqu'à obtention d'une pâte lisse et élastique, en ajoutant un peu d'eau si nécessaire.
+
+    (Version farine) Délayer la farine (ex: farine de manioc ou de maïs) dans de l'eau froide.
+
+    Porter de l'eau à ébullition, y verser le mélange délayé et tourner constamment avec une spatule en bois sur le feu jusqu'à ce que la pâte épaississe, devienne translucide et se détache des parois.
+
+origin: Afrique de l'Ouest et Centrale (très répandu).
+
+preparation_time: 30 min (farine) - 1h (tubercules)

@@ -1,0 +1,286 @@
+[
+  {
+    "name": "Moambe",
+    "description": "An emblematic and rich dish from Central African cuisine. It consists of chicken simmered in a creamy, flavorful sauce made from palm nut pulp oil (Moambe).",
+    "ingredients": [
+      "Chicken",
+      "Palm nut paste ",
+      "Sliced onions",
+      "Minced garlic",
+      "Grated ginger",
+      "Tomato paste",
+      "Crushed or diced tomatoes",
+      "Poultry broth or water",
+      "Salt",
+      "Pepper",
+      "Ground nutmeg",
+      "Ground paprika",
+      "Chili pepper (optional)",
+      "vegetable oil"
+    ],
+    "recipe": [
+      "Salt, pepper, and season the chicken pieces (nutmeg, paprika).",
+      "In a large pot, heat half of the oil. Brown the chicken on all sides, then remove and set aside.",
+      "In the same pot, add the remaining oil and sauté the sliced onions until translucent (approximately 5 minutes).",
+      "Add the minced garlic and grated ginger. Cook for 1 minute.",
+      "Stir in the tomato paste and diced tomatoes, mix, and simmer for 5 minutes.",
+      "Return the chicken to the pot. Add the broth, salt, and spices (chili flakes if used). Bring to a boil, then cover and simmer over low heat for 20 minutes.",
+      "Meanwhile, dissolve the Moambe paste or peanut butter in a little hot sauce taken from the pot until a homogeneous sauce is obtained.",
+      "Pour the Moambe/peanut mixture into the pot, stir gently, and continue to simmer for an additional 10 minutes, until the sauce thickens and the chicken is fully cooked.",
+      "If the sauce is too fatty (especially with Moambe), skim and remove the excess oil before serving with rice or saka-saka."
+    ],
+    "origin": "Democratic Republic of the Congo",
+    "preparation_time": "30 minutes"
+  },
+  {
+    "name": "Bobolo (Manioc Stick)",
+    "description": "A traditional and fermented accompaniment from Central Africa, consisting of manioc (cassava) paste conditioned into firm, steamed sticks, wrapped in banana leaves.",
+    "ingredients": [
+      "Fresh manioc tubers",
+      "Clean water",
+      "Banana leaves",
+      "Salt"
+    ],
+    "recipe": [
+      "Peel and wash the manioc tubers thoroughly.",
+      "Soak the manioc in clean, cold water for 4 days, changing the water daily. The manioc must become soft and fermented (essential process to reduce cyanide content).",
+      "Remove the tubers from the water, drain them, open them, and remove the central fiber (the stringy part).",
+      "Crush or grind the fermented manioc to obtain a homogeneous paste.",
+      "Press the paste in a clean cloth to eliminate the excess water and starch.",
+      "Divide the paste into portions and shape them into regular rolls (sticks).",
+      "Wrap each paste stick in one or more banana leaves (or substitute wrapping) to form an airtight package.",
+      "Steam the sticks in a pot for 90 minutes to 120 minutes, until they are firm and tender. (The duration depends on the size of the sticks).",
+      "Serve hot or cold, sliced."
+    ],
+    "origin": "Cameroon",
+    "preparation_time": "cooking: 100 minutes ."
+  },
+  {
+    "name": "Kwanga (Chikwangue)",
+    "description": "A Congolese staple food, very similar to Bobolo. It is a block or stick of fermented and steamed manioc (cassava) paste, conditioned and served wrapped in banana or marantaceae leaves. Its texture is often more gelatinous than Bobolo.",
+    "ingredients": [
+      "Fresh manioc tubers ",
+      "Clean water",
+      "Banana leaves "
+    ],
+    "recipe": [
+      "Prepare the fermented manioc paste: Soak the manioc tubers in water for 7 days to 14 days (depending on the method) to achieve fermentation and softening.",
+      "Remove the manioc from the water, peel it, and blend/pound it to obtain a very fine paste.",
+      "Press and drain the paste to remove the water and fibers.",
+      "Cook a small portion of the paste in boiling water until a gelatinous mass is obtained (like a Placali).",
+      "Mix this cooked portion with the rest of the raw paste to bind it and give it its characteristic texture.",
+      "Wrap the resulting paste in banana leaves (or other) to form thick sticks or blocks.",
+      "Steam in a pot (bain-marie) for 60 minutes until the Kwanga is compact and gelatinous.",
+      "Serve hot or at room temperature."
+    ],
+    "origin": "Congo",
+    "preparation_time": "60 minutes."
+  },
+  {
+    "name": "Liboke de Poisson (Fish Liboke)",
+    "description": "A Congolese specialty where fish is braised in a pouch made of banana leaves, which gives the dish a unique fragrance and preserves the aromas of the spices.",
+    "ingredients": [
+      "Fish (catfish, tilapia, or carp) cut into pieces",
+      "Medium chopped or diced onions",
+      "Crushed garlic",
+      "Grated fresh ginger",
+      "Crushed ",
+      "Chopped chives",
+      "vinegar ",
+      "Chili pepper (whole or chopped, to taste)",
+      "Olive oil or vegetable oil",
+      "Salt",
+      "Pepper",
+      "Bouillon cube (Maggi) to taste",
+      "Large and pliable banana leaves"
+    ],
+    "recipe": [
+      "Clean the fish with lemon juice or vinegar to remove the sliminess, rinse, and dry the pieces.",
+      "Prepare the marinade: In a bowl, mix the onions, garlic, ginger, tomatoes, chives, salt, pepper, bouillon cube, and oil.",
+      "Generously coat the fish pieces with this marinade.",
+      "On a flat surface, lay out a large banana leaf (possibly doubled). Place half of the marinade in the center.",
+      "Arrange the fish pieces on this marinade base, then cover with the rest of the marinade and a whole chili pepper (if used).",
+      "Close the banana leaf to form an airtight package (the *Liboké*). Tie if necessary with string or secure with aluminum foil.",
+      "Steam (in a large pot with water at the bottom, bain-marie) or bake (in a dish with a little water at the bottom) for approximately 60 minutes.",
+      "Serve hot, directly in the pouch or unwrapped on a plate, traditionally with manioc or rice."
+    ],
+    "origin": "Congo",
+    "preparation_time": "15 minutes"
+  },
+  {
+    "name": "Couscous Royal",
+    "description": "A traditional Berber dish, emblematic of the Maghreb, consisting of steamed durum wheat semolina served with a stew (tafaya) of vegetables and several types of meat (lamb, chicken, beef/merguez in the \"royal\" version).",
+    "ingredients": {
+      "semolina": [
+        "Medium durum wheat semolina",
+        "Olive oil",
+        "Salt",
+        "Hot water "
+      ],
+      "stew": [
+        "Lamb or beef neck",
+        "Chicken thighs",
+        "Merguez (spicy lamb/beef sausages)",
+        "Sliced onion",
+        "Carrots",
+        "Turnips",
+        "Zucchini",
+        "Celery (cut into large pieces)",
+        "Chickpeas",
+        "Tomato paste",
+        "Ras el Hanout (spice blend)",
+        "Paprika",
+        "Fresh coriander",
+        "Olive oil",
+        "Salt",
+        "Pepper"
+      ]
+    },
+    "recipe": [
+      "Stew preparation: In the bottom part of the couscoussier or a large Dutch oven, brown the lamb and chicken pieces in olive oil.",
+      "Remove the meat and sweat the sliced onion. Add the celery, carrots, and turnips. Sauté for a few minutes.",
+      "Stir in the Ras el Hanout, paprika, and tomato paste. Return the meat. Salt and pepper.",
+      "Cover with water (or broth) and bring to a boil. Simmer for 45 minutes.",
+      "Add the zucchini cut into large cubes and the drained chickpeas. Continue cooking the stew for 15 minutes.",
+      "Semolina preparation: Pour the semolina into a large dish. Add olive oil and salt. Rub it by hand to separate the grains.",
+      "Moisten the semolina with an equal amount of boiling water (or broth). Cover and let it swell for 5 minutes.",
+      "Fluff the semolina with a fork to separate the grains. (For a traditional couscoussier, steam the semolina above the stew, repeating the operation three times).",
+      "Grill the merguez in a pan or on a grill, without adding fat.",
+      "Serving: Arrange the semolina in a dome, dig a well for the vegetables and broth. Garnish with the different pieces of meat (lamb, chicken, merguez) and sprinkle with fresh coriander."
+    ],
+    "origin": "Morocco",
+    "preparation_time": "60 minutes "
+  },
+  {
+    "name": "Chicken Tagine with Preserved Lemon and Olives",
+    "description": "An emblematic Moroccan dish, cooked slowly in an earthenware pot of the same name. It is a chicken stew, flavored by the tangy taste of preserved lemon, the salty notes of green olives, and a blend of mild spices (saffron, ginger).",
+    "ingredients": [
+      "Chicken (thighs and drumsticks, or pieces)",
+      "Salt-preserved lemon",
+      "Green olives ",
+      "Sliced onions",
+      "Minced garlic",
+      "Ground ginger",
+      "Turmeric",
+      "Saffron threads",
+      "Olive oil",
+      "Poultry broth or water",
+      "Chopped fresh coriander and flat-leaf parsley",
+      "Salt",
+      "Pepper"
+    ],
+    "recipe": [
+      "Prepare the marinade: Mix the olive oil, ginger, turmeric, garlic, saffron, salt, and pepper. Coat the chicken pieces and let them marinate for 30 minutes.",
+      "Cut the preserved lemon: Dice the pulp and peel, removing the seeds.",
+      "In a tagine dish or Dutch oven, brown the marinated chicken pieces on all sides. Remove and set aside.",
+      "Add the sliced onions to the pot and sweat them gently for 5 minutes. Add the remaining marinade spices (if any).",
+      "Return the chicken to the dish. Add the broth, cover, and simmer for 45 minutes over low heat.",
+      "Add the diced preserved lemon, rinsed green olives, and half of the chopped fresh herbs.",
+      "Cover again and simmer for 15 minutes, until the chicken is very tender.",
+      "Check the seasoning (preserved lemon and olives are salty).",
+      "Serve hot, garnished with the remaining fresh herbs, often accompanied by semolina."
+    ],
+    "origin": "Morocco",
+    "preparation_time": "30 minutes "
+  },
+  {
+    "name": "Egg Brik",
+    "description": "A crispy and popular specialty of the Maghreb, particularly in Tunisia. It consists of a brik pastry sheet (or malsouka) folded into a half-moon or triangle, stuffed with a filling (potato, tuna, parsley) and a raw egg, then quickly fried for a runny yolk.",
+    "ingredients": [
+      "Brik pastry sheets or malsouka",
+      "Fresh eggs",
+      "Medium potatoes (cooked and mashed)",
+      "Tuna in oil (drained)",
+      "Chopped ",
+      "Chopped fresh parsley or coriander",
+      "Capers (optional)",
+      "Lemon juice (for serving)",
+      "Salt",
+      "Pepper",
+      "Frying oil"
+    ],
+    "recipe": [
+      "Prepare the filling: Mash the cooked potatoes. Mix with the crumbled tuna, parsley/coriander, chopped onion, capers, salt, and pepper. (Optional: sauté the onion beforehand).",
+      "Assembly: Lay a brik sheet flat. Place the filling in the center.",
+      "Make a small well in the middle of the filling and crack a raw egg into it (do not mix it with the filling).",
+      "Gently fold the edges of the brik sheet to form a triangle, half-moon, or square (making sure the egg is contained and the sheet is tightly sealed).",
+      "Frying: Heat the oil generously in a pan over high heat (it must be very hot).",
+      "Gently place the brik in the oil. Fry for 1 minute on each side, until golden brown and crispy.",
+      "Remove the brik and drain it on paper towels.",
+      "Serve immediately while the egg yolk is still runny, with a lemon wedge."
+    ],
+    "origin": "Tunisia",
+    "preparation_time": "20 minutes "
+  },
+  {
+    "name": "Chorba (or Tchorba) Algerian Style",
+    "description": "A thick and very fragrant traditional soup from the Maghreb, essential during Ramadan. It is generally based on meat (lamb), various vegetables, tomatoes, and spices, enriched with vermicelli or crushed wheat.",
+    "ingredients": [
+      "Lamb meat (neck or shoulder) cut into small cubes",
+      "Chopped onion",
+      "Minced garlic",
+      "Ripe peeled and diced tomatoes or crushed tomatoes",
+      "Tomato paste",
+      "Ras el Hanout (spice blend)",
+      "Paprika",
+      "Cumin",
+      "Chickpeas (soaked or canned)",
+      "Carrots",
+      "Turnip",
+      "Zucchini (cut into small dice)",
+      "Diced celery stick",
+      "Water or poultry broth",
+      "Chopped fresh coriander and mint",
+      "Vermicelli (angel hair) or crushed wheat",
+      "Olive oil",
+      "Salt",
+      "Pepper"
+    ],
+    "recipe": [
+      "In a large pot (marmite), heat the olive oil. Add the chopped onion, garlic, and celery, and sauté for 5 minutes.",
+      "Add the lamb pieces and brown them on all sides.",
+      "Stir in the spices (Ras el Hanout, paprika, cumin), diced tomatoes, and tomato paste. Mix well and cook for 5 minutes.",
+      "Add the hard vegetables (carrots, turnips) and soaked chickpeas. Cover with water or broth. Salt and pepper.",
+      "Bring to a boil, then reduce the heat and simmer for 30 minutes.",
+      "Add the diced zucchini and continue cooking for 15 minutes.",
+      "Add the vermicelli (or crushed wheat) 10 minutes before the end of cooking, stirring to prevent sticking.",
+      "Taste and adjust the seasoning. When serving, generously sprinkle with fresh chopped coriander and mint."
+    ],
+    "origin": "Algeria",
+    "preparation_time": "30 minutes "
+  },
+  {
+    "name": "Mafé (Chicken with Peanut Butter)",
+    "description": "A rich and flavorful stew, popular in West Africa. The meat (beef or chicken) is simmered in a creamy and smooth sauce based on peanut paste, tomato paste, and root vegetables.",
+    "ingredients": [
+      "Chicken or beef cut into pieces",
+      "Peanut paste (natural peanut butter)",
+      "Tomato paste",
+      "Sliced onions",
+      "Minced garlic",
+      "Grated fresh ginger",
+      "Carrots",
+      "Potatoes",
+      "Sweet potato",
+      "hot water",
+      "Vegetable oil",
+      "Salt",
+      "Pepper",
+      "Whole chili pepper (optional)"
+    ],
+    "recipe": [
+      "Brown the seasoned meat pieces (salt, pepper, garlic/ginger if desired) in a large Dutch oven with oil. Remove and set aside.",
+      "In the same Dutch oven, sauté the sliced onions until translucent.",
+      "Add the minced garlic and grated ginger. Cook for 1 minute.",
+      "Stir in the tomato paste, mix, and cook for 5 minutes to 'break' the acidity.",
+      "Dilute the peanut paste in a little hot broth until a smooth texture is obtained.",
+      "Pour the peanut mixture into the Dutch oven. Stir vigorously to avoid lumps.",
+      "Add the rest of the broth and the reserved meat. Bring to a boil and simmer for 15 minutes.",
+      "Add the carrots, potatoes, and sweet potato cut into large pieces. Place the whole chili pepper if used.",
+      "Cover and simmer over low heat for approximately 60 minutes, until the sauce is thick and the meat and vegetables are very tender.",
+      "Stir occasionally to prevent the sauce from sticking. Remove the chili pepper and serve hot with white rice."
+    ],
+    "origin": "Senegal",
+    "preparation_time": "25 minutes"
+  }
+]

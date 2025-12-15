@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Eru",
+    "description": "A traditional Cameroonian stew made from eru leaves (Gnetum africanum), cooked with meat or fish and palm oil. It's a flavorful vegetable dish.",
+    "ingredients": [
+      "Eru leaves",
+      "Meat or fish",
+      "Palm oil",
+      "Onions",
+      "Garlic",
+      "Salt",
+      "Chili peppers",
+      "Broth"
+    ],
+    "recipe": [
+      "Cook the meat or fish with onions, garlic, and a bit of water to make broth.",
+      "Add the pounded or chopped eru leaves and palm oil.",
+      "Simmer for 20-30 minutes until the leaves are tender and the flavors meld.",
+      "Season with salt and chili peppers to taste.",
+      "Serve hot with fufu or rice."
+    ],
+    "origin": "Cameroon",
+    "preparation_time": "45 min"
+  }
+]

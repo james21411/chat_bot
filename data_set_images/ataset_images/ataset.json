@@ -1,0 +1,358 @@
+[
+  {
+    "name": "Ugali",
+    "description": "Thick maize flour porridge, a staple accompaniment often served with stews or grilled meat.",
+    "ingredients": [
+      "water",
+      "white maize flour",
+      "salt",
+      "butter"
+    ],
+    "recipe": [
+      "Measure water and maize flour into separate bowls.",
+      "Pour water into a heavy-bottomed pot and add salt.",
+      "Bring water to a boil over medium-high heat, watching carefully.",
+      "Reduce heat to medium and gradually sprinkle a portion of the flour into the boiling water.",
+      "Stir constantly with a wooden spoon to prevent lumps.",
+      "Cook for 2–3 minutes until a smooth, thin porridge forms.",
+      "Slowly add the remaining flour in small portions, stirring vigorously.",
+      "Lower heat to medium-low and stir for 5–7 minutes until thickened.",
+      "Check consistency: ugali should form a firm mass that pulls away from the pot’s sides.",
+      "Press ugali in the pot to shape it smoothly.",
+      "Let it rest on low heat for 1–2 minutes to firm up.",
+      "Wet a plate with water to prevent sticking.",
+      "Turn the pot upside down to unmold ugali into a dome shape.",
+      "Serve hot, cut or torn into portions, with stew or meat."
+    ],
+    "origin": "Kenya",
+    "preparation_time": "20–30 minutes"
+  },
+  {
+    "name": "Nyama_Choma",
+    "description": "Grilled meat, often goat or beef, served with kachumbari, a fresh tomato and onion salad.",
+    "ingredients": [
+      "goat or beef meat",
+      "vegetable oil",
+      "garlic paste",
+      "ginger paste",
+      "paprika",
+      "black pepper",
+      "salt",
+      "cumin powder",
+      "lemon juice",
+      "tomatoes",
+      "red onion",
+      "coriander",
+      "lemon juice",
+      "salt"
+    ],
+    "recipe": [
+      "Cut the meat into medium pieces for even cooking.",
+      "Mix oil, garlic, ginger, paprika, pepper, salt, cumin, and lemon juice for the marinade.",
+      "Rub the marinade over the meat, coating all pieces thoroughly.",
+      "Cover and marinate for 30 minutes at room temperature.",
+      "Light a charcoal barbecue and wait until the coals are white-hot.",
+      "Place meat pieces on the grill over medium-high heat, spacing them evenly.",
+      "Grill for 8–10 minutes per side, turning regularly with tongs.",
+      "Finely chop tomatoes, onion, and coriander for the kachumbari.",
+      "Mix kachumbari with lemon juice and a pinch of salt.",
+      "Check meat doneness, cooked to medium or as preferred.",
+      "Let the meat rest for 5 minutes to retain juices.",
+      "Serve hot with kachumbari and ugali or fries."
+    ],
+    "origin": "Kenya",
+    "preparation_time": "1 hour"
+  },
+  {
+    "name": "Injera_with_Doro_Wat",
+    "description": "Fermented flatbread served with a spicy chicken stew.",
+    "ingredients": {
+      "injera": [
+        "teff flour",
+        "water",
+        "salt"
+      ],
+      "doro_wat": [
+        "chicken",
+        "onions",
+        "berbere spices",
+        "tomato paste",
+        "garlic",
+        "ginger",
+        "niter kibbeh",
+        "hard-boiled eggs",
+        "water",
+        "salt"
+      ]
+    },
+    "recipe": [
+      "Mix teff flour and water for injera, cover, and let ferment for 2–3 days.",
+      "Stir the batter daily until it becomes sour and bubbly.",
+      "Add salt to the batter and adjust with water for a thin consistency.",
+      "Heat a non-stick skillet, lightly oil, and pour batter in a spiral.",
+      "Cook injera for 2–3 minutes without flipping, until bubbles form.",
+      "Stack injeras under a cloth to keep them soft.",
+      "For doro wat, blend onions into a puree without water.",
+      "Heat niter kibbeh in a pot and cook onions for 10 minutes.",
+      "Add garlic, ginger, berbere, and tomato paste, cook for 5 minutes.",
+      "Add chicken and water, simmer for 30–40 minutes on low heat.",
+      "Add hard-boiled eggs, adjust salt, and simmer for 5 minutes.",
+      "Serve doro wat on injera with rolled injeras on the side."
+    ],
+    "origin": "Ethiopia",
+    "preparation_time": "2–3 days (injera); 1h30 (doro wat)"
+  },
+  {
+    "name": "Matoke",
+    "description": "Cooked and mashed green plantains, often with meat or vegetables.",
+    "ingredients": [
+      "green plantains",
+      "beef or goat meat",
+      "onions",
+      "tomatoes",
+      "vegetable oil",
+      "garlic paste",
+      "ginger paste",
+      "salt",
+      "black pepper",
+      "water"
+    ],
+    "recipe": [
+      "Peel green plantains by removing the skin with a knife.",
+      "Cut plantains into pieces and rinse in water to remove starch.",
+      "Heat oil in a pot over medium heat.",
+      "Sauté onions until translucent, about 5 minutes.",
+      "Add garlic and ginger, cook for 1 minute while stirring.",
+      "Add meat and brown for 5–7 minutes.",
+      "Add tomatoes, salt, and pepper, cook for 5 minutes.",
+      "Add plantains and stir to coat with sauce.",
+      "Pour in water and bring to a boil.",
+      "Reduce to low heat, cover, and simmer for 20–25 minutes.",
+      "Lightly mash plantains with a slotted spoon.",
+      "Adjust seasoning and serve hot."
+    ],
+    "origin": "Uganda",
+    "preparation_time": "1 hour"
+  },
+  {
+    "name": "Pilau",
+    "description": "Spiced rice with meat, often served during celebrations.",
+    "ingredients": [
+      "basmati rice",
+      "chicken, beef, or goat meat",
+      "onions",
+      "vegetable oil",
+      "garlic paste",
+      "ginger paste",
+      "tomatoes",
+      "cumin powder",
+      "coriander powder",
+      "turmeric",
+      "cloves",
+      "cardamom pods",
+      "cinnamon stick",
+      "broth",
+      "salt"
+    ],
+    "recipe": [
+      "Rinse basmati rice and soak for 20 minutes, then drain.",
+      "Heat oil in a pot over medium heat.",
+      "Sauté onions until golden, about 8–10 minutes.",
+      "Add garlic and ginger, cook for 1 minute while stirring.",
+      "Add cumin, coriander, turmeric, cloves, cardamom, and cinnamon.",
+      "Cook spices for 1 minute to release aromas.",
+      "Add meat and brown for 5–7 minutes.",
+      "Add tomatoes and cook for 5 minutes to form a thick sauce.",
+      "Add drained rice and stir to coat grains.",
+      "Pour in broth, add salt, and bring to a boil.",
+      "Reduce to low heat, cover, and simmer for 15–20 minutes.",
+      "Let rest off heat for 5 minutes before serving."
+    ],
+    "origin": "Tanzania",
+    "preparation_time": "1 hour"
+  },
+  {
+    "name": "Pap_and_Chakalaka",
+    "description": "Maize porridge served with a spicy vegetable relish.",
+    "ingredients": {
+      "pap": [
+        "water",
+        "white maize flour",
+        "salt"
+      ],
+      "chakalaka": [
+        "carrots",
+        "green bell pepper",
+        "onion",
+        "tomatoes",
+        "cooked beans",
+        "vegetable oil",
+        "curry powder",
+        "paprika",
+        "salt"
+      ]
+    },
+    "recipe": [
+      "Bring water to a boil with salt for the pap.",
+      "Sprinkle a portion of maize flour into the water while stirring.",
+      "Cook for 2–3 minutes to form a smooth porridge without lumps.",
+      "Gradually add remaining flour, stirring vigorously.",
+      "Reduce to low heat and cook for 15–20 minutes, stirring often.",
+      "Heat oil in a skillet for the chakalaka.",
+      "Sauté onion until translucent, about 5 minutes.",
+      "Add carrots and bell pepper, cook for 5–7 minutes.",
+      "Add tomatoes, curry, and paprika, cook for 5 minutes.",
+      "Add beans and simmer for 5 minutes.",
+      "Adjust salt for the chakalaka.",
+      "Serve hot pap with chakalaka on top."
+    ],
+    "origin": "South Africa",
+    "preparation_time": "45 minutes"
+  },
+  {
+    "name": "Bunny_Chow",
+    "description": "Hollowed-out bread filled with spicy curry.",
+    "ingredients": [
+      "round or square bread",
+      "chicken, lamb, or beef meat",
+      "onions",
+      "tomatoes",
+      "vegetable oil",
+      "garlic paste",
+      "ginger paste",
+      "curry powder",
+      "turmeric",
+      "cumin",
+      "water",
+      "salt"
+    ],
+    "recipe": [
+      "Heat oil in a pot over medium heat.",
+      "Sauté onions until golden, about 8–10 minutes.",
+      "Add garlic and ginger, cook for 1 minute while stirring.",
+      "Add curry, turmeric, and cumin, cook for 1 minute.",
+      "Add meat and brown for 5–7 minutes.",
+      "Add tomatoes and cook for 5 minutes to form a thick sauce.",
+      "Pour in water, add salt, and simmer for 20–30 minutes.",
+      "Cut bread into portions and hollow out the center, reserving the bread crumbs.",
+      "Ensure curry is thick to avoid soaking the bread.",
+      "Fill each bread portion with hot curry.",
+      "Place reserved bread crumbs on top.",
+      "Serve immediately with a salad."
+    ],
+    "origin": "South Africa",
+    "preparation_time": "1h30"
+  },
+  {
+    "name": "Sadza",
+    "description": "Maize porridge similar to ugali, served with meat or vegetables.",
+    "ingredients": [
+      "water",
+      "white maize flour",
+      "salt",
+      "butter"
+    ],
+    "recipe": [
+      "Measure water and maize flour, reserving a small portion of flour.",
+      "Bring water to a boil with salt in a pot.",
+      "Sprinkle a portion of flour into boiling water while stirring.",
+      "Cook for 2–3 minutes to form a smooth porridge without lumps.",
+      "Add remaining flour in small portions, stirring continuously.",
+      "Reduce to low heat and cook for 15–20 minutes, stirring often.",
+      "Check consistency: sadza should pull away from the pot’s sides.",
+      "Press sadza to form a smooth mass.",
+      "Wet a plate and unmold sadza into a dome shape.",
+      "Brush with butter for added flavor.",
+      "Cut into portions to serve with stew.",
+      "Serve hot with meat or vegetables."
+    ],
+    "origin": "Zimbabwe",
+    "preparation_time": "20–30 minutes"
+  },
+  {
+    "name": "Seswaa",
+    "description": "Beef or goat meat slow-cooked and shredded.",
+    "ingredients": [
+      "beef or goat",
+      "onions",
+      "salt",
+      "water",
+      "black pepper"
+    ],
+    "recipe": [
+      "Cut meat into large pieces, keeping the bones.",
+      "Place meat in a pot with onions and salt.",
+      "Add water and bring to a boil over medium-high heat.",
+      "Reduce to low heat, cover, and simmer for 2–3 hours.",
+      "Check water level and add more if needed.",
+      "Remove meat and reserve the broth.",
+      "Remove bones and shred meat with forks.",
+      "Return shredded meat to the pot with some broth.",
+      "Adjust salt and pepper, simmer for 10 minutes.",
+      "Stir to achieve a moist consistency.",
+      "Serve hot with maize porridge.",
+      "Accompany with vegetables or sauce."
+    ],
+    "origin": "Botswana",
+    "preparation_time": "3 hours"
+  },
+  {
+    "name": "Boerewors",
+    "description": "Spicy sausage grilled, often served at barbecues.",
+    "ingredients": [
+      "boerewors",
+      "vegetable oil",
+      "pap",
+      "mustard"
+    ],
+    "recipe": [
+      "Check that boerewors is in a spiral or pieces.",
+      "Light a charcoal barbecue until coals are white-hot.",
+      "Lightly oil the grill to prevent sticking.",
+      "Place boerewors on the grill over medium heat.",
+      "Grill for 10–12 minutes, turning regularly.",
+      "Check doneness: sausage should be juicy, not pink.",
+      "Remove from grill and let rest for 3–5 minutes.",
+      "Cut into portions if needed.",
+      "Prepare pap to accompany.",
+      "Serve hot with mustard.",
+      "Accompany with salad or grilled vegetables.",
+      "Enjoy immediately for optimal flavor."
+    ],
+    "origin": "South Africa",
+    "preparation_time": "45 minutes"
+  },
+  {
+    "name": "Ndolé",
+    "description": "Cameroonian dish made with bitter leaves, peanut paste, and shrimp or meat.",
+    "ingredients": [
+      "ndolé leaves",
+      "peanuts",
+      "shrimp",
+      "onions",
+      "tomatoes",
+      "palm oil",
+      "salt",
+      "bouillon cube",
+      "chili"
+    ],
+    "recipe": [
+      "Wash ndolé leaves to remove dust and impurities.",
+      "Boil leaves with a pinch of baking soda to reduce bitterness.",
+      "Drain leaves and rinse with cold water.",
+      "Cook meat or shrimp in a pot with a pinch of salt.",
+      "Dry-roast peanuts in a skillet over medium heat.",
+      "Grind peanuts to form a smooth paste.",
+      "Dilute peanut paste with hot water for a creamy consistency.",
+      "Heat palm oil in a pot and sauté onions.",
+      "Add chopped tomatoes and chili, cook until a sauce forms.",
+      "Add diluted peanut paste and stir.",
+      "Add boiled ndolé leaves and meat or shrimp.",
+      "Add bouillon cube and adjust salt.",
+      "Simmer on low heat for about 30 minutes, stirring occasionally.",
+      "Serve hot with plantains, rice, or cassava."
+    ],
+    "origin": "Cameroon",
+    "preparation_time": "1h30"
+  }
+]

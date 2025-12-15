@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Nourriture - Interface Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .mode-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px solid #ecf0f1;
+            border-radius: 8px;
+        }
+        .mode-section h2 {
+            color: #e74c3c;
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        input[type="file"], input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .loading {
+            text-align: center;
+            color: #6c757d;
+        }
+        .image-preview {
+            max-width: 200px;
+            max-height: 200px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ Chatbot Nourriture - Interface Simple</h1>
+        
+        <!-- Mode 1: Chat Texte-Uniquement -->
+        <div class="mode-section">
+            <h2>💬 Chat Texte-Uniquement</h2>
+            <div class="form-group">
+                <label for="text-input">Votre question :</label>
+                <textarea id="text-input" placeholder="Ex: Parle-moi de la cuisine africaine..."></textarea>
+            </div>
+            <button onclick="sendTextOnly()">Envoyer</button>
+            <div id="text-result" class="result"></div>
+        </div>
+
+        <!-- Mode 2: Reconnaissance Simple -->
+        <div class="mode-section">
+            <h2>🖼️ Reconnaissance d'Image Simple</h2>
+            <div class="form-group">
+                <label for="simple-image">Choisir une image :</label>
+                <input type="file" id="simple-image" accept="image/*" onchange="previewImage('simple-image', 'simple-preview')">
+                <img id="simple-preview" class="image-preview" style="display: none;">
+            </div>
+            <button onclick="sendSimpleImage()">Analyser l'Image</button>
+            <div id="simple-result" class="result"></div>
+        </div>
+
+        <!-- Mode 3: Image + Texte (Interface Simple) -->
+        <div class="mode-section">
+            <h2>🍽️ Analyse Image + Chat</h2>
+            <div class="form-group">
+                <label for="combined-image">Choisir une image :</label>
+                <input type="file" id="combined-image" accept="image/*" onchange="previewImage('combined-image', 'combined-preview')">
+                <img id="combined-preview" class="image-preview" style="display: none;">
+            </div>
+            <div class="form-group">
+                <label for="combined-text">Votre question sur l'image :</label>
+                <textarea id="combined-text" placeholder="Ex: Quel plat est-ce et quels sont ses ingrédients ?"></textarea>
+            </div>
+            <button onclick="sendCombined()">Analyser et Répondre</button>
+            <div id="combined-result" class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+
+        // Prévisualiser l'image sélectionnée
+        function previewImage(inputId, previewId) {
+            const input = document.getElementById(inputId);
+            const preview = document.getElementById(previewId);
+            
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Afficher le résultat
+        function showResult(elementId, content, isError = false) {
+            const element = document.getElementById(elementId);
+            element.className = `result ${isError ? 'error' : 'success'}`;
+            element.innerHTML = content;
+            element.style.display = 'block';
+        }
+
+        // Chat Texte-Uniquement
+        async function sendTextOnly() {
+            const text = document.getElementById('text-input').value.trim();
+            if (!text) {
+                showResult('text-result', '⚠️ Veuillez entrer une question', true);
+                return;
+            }
+
+            showResult('text-result', '⏳ Envoi en cours...', false);
+
+            try {
+                const response = await fetch(`${API_BASE}/chat/text`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ text: text })
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showResult('text-result', `
+                        <h4>✅ Réponse :</h4>
+                        <p>${result.response}</p>
+                        <small>🕒 ${new Date(result.timestamp).toLocaleString()}</small>
+                    `);
+                } else {
+                    showResult('text-result', `❌ Erreur: ${result.detail || result.error}`, true);
+                }
+            } catch (error) {
+                showResult('text-result', `❌ Erreur de connexion: ${error.message}`, true);
+            }
+        }
+
+        // Reconnaissance Simple
+        async function sendSimpleImage() {
+            const fileInput = document.getElementById('simple-image');
+            if (!fileInput.files[0]) {
+                showResult('simple-result', '⚠️ Veuillez sélectionner une image', true);
+                return;
+            }
+
+            showResult('simple-result', '⏳ Analyse en cours...', false);
+
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            try {
+                const response = await fetch(`${API_BASE}/predict`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showResult('simple-result', `
+                        <h4>🍽️ Résultat :</h4>
+                        <p><strong>Plat:</strong> ${result.predicted_class.replace('_', ' ')}</p>
+                        <p><strong>Confiance:</strong> ${(result.confidence * 100).toFixed(1)}%</p>
+                        ${result.food_info ? `
+                            <p><strong>Origine:</strong> ${result.food_info.origin || 'Non spécifiée'}</p>
+                            <p><strong>Description:</strong> ${result.food_info.description || 'Aucune description'}</p>
+                        ` : ''}
+                        <small>🕒 ${new Date(result.timestamp).toLocaleString()}</small>
+                    `);
+                } else {
+                    showResult('simple-result', `❌ Erreur: ${result.detail}`, true);
+                }
+            } catch (error) {
+                showResult('simple-result', `❌ Erreur de connexion: ${error.message}`, true);
+            }
+        }
+
+        // Image + Texte Combinés
+        async function sendCombined() {
+            const fileInput = document.getElementById('combined-image');
+            const text = document.getElementById('combined-text').value.trim();
+            
+            if (!fileInput.files[0]) {
+                showResult('combined-result', '⚠️ Veuillez sélectionner une image', true);
+                return;
+            }
+            
+            if (!text) {
+                showResult('combined-result', '⚠️ Veuillez poser une question', true);
+                return;
+            }
+
+            showResult('combined-result', '⏳ Analyse en cours...', false);
+
+            // Convertir l'image en base64
+            const file = fileInput.files[0];
+            const base64Image = await new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.readAsDataURL(file);
+            });
+
+            try {
+                const response = await fetch(`${API_BASE}/chat/image-text`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        image: base64Image,
+                        text: text 
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showResult('combined-result', `
+                        <h4>🍽️ Analyse Complète :</h4>
+                        <div style="white-space: pre-wrap;">${result.response}</div>
+                        ${result.prediction ? `
+                            <hr>
+                            <p><strong>🎯 Prédiction:</strong> ${result.prediction.predicted_class.replace('_', ' ')} (${(result.prediction.confidence * 100).toFixed(1)}%)</p>
+                        ` : ''}
+                        <small>🕒 ${new Date(result.timestamp).toLocaleString()}</small>
+                    `);
+                } else {
+                    showResult('combined-result', `❌ Erreur: ${result.detail || result.error}`, true);
+                }
+            } catch (error) {
+                showResult('combined-result', `❌ Erreur de connexion: ${error.message}`, true);
+            }
+        }
+
+        // Charger la page d'accueil au démarrage
+        window.onload = function() {
+            console.log('🍽️ Interface Chatbot Chargée');
+            console.log('📡 API Base:', API_BASE);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+name: Attieke
+
+description: Semoule de manioc fermentée, cuite à la vapeur. Accompagnement populaire en Côte d'Ivoire, souvent servi avec du poisson ou poulet braisé et une sauce tomate-oignon.
+
+recipe:
+
+    (Traditionnelle) Râper le manioc, le laisser fermenter quelques jours, le presser pour extraire l'eau, le sécher, le "granuler" à la main, puis le cuire à la vapeur.
+
+    (Version rapide - attiéké sec/pré-cuit) Réhydrater l'attiéké sec avec un peu d'eau salée et un filet d'huile.
+
+    Égrener à la main ou à la fourchette.
+
+    Cuire à la vapeur (dans un couscoussier ou au micro-ondes) pendant 5-10 minutes jusqu'à ce qu'il soit chaud et léger.
+
+origin: Côte d'Ivoire (principalement du Sud).
+
+preparation_time: 15-20 min (pour attiéké pré-cuit) / Plusieurs jours (fabrication traditionnelle).

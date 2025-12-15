@@ -1,0 +1,19 @@
+name: Ewedu_Soup
+
+description: Soupe gluante (visqueuse) nigériane à base de feuilles de jute (Ewedu), typiquement servie par les Yorubas avec du Gbegiri (soupe de haricots) et de l'Amala.
+
+recipe:
+
+    Laver les feuilles d'Ewedu et les détacher des tiges.
+
+    Les faire bouillir dans un peu d'eau avec un peu de potasse (kaun) pour attendrir (optionnel).
+
+    Traditionnellement, écraser les feuilles avec un petit balai spécial (Ijabe) jusqu'à obtenir une texture gluante. (Alternative moderne: mixer très brièvement au blender).
+
+    Ajouter des écrevisses moulues, de l'Iru (souci fermenté) et un cube de bouillon.
+
+    Laisser mijoter quelques minutes (ne pas trop cuire pour garder la couleur verte).
+
+origin: Nigeria (spécialité Yoruba).
+
+preparation_time: 20 - 30 minutes.

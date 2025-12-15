@@ -1,0 +1,19 @@
+name: Egusi_Soup
+
+    description: Soupe épaisse nigériane préparée avec des graines de melon (egusi) moulues, des légumes-feuilles (épinards, feuilles amères...), de l'huile de palme et divers types de viandes et poissons.
+
+    recipe:
+
+        Moudre les graines d'egusi et former une pâte avec un peu d'eau ou d'oignon mixé.
+
+        Chauffer l'huile de palme, y faire frire la pâte d'egusi par petites boules ou en remuant (méthode "lump" ou "fried").
+
+        Ajouter le bouillon de viande, la viande et le poisson (précuits), les écrevisses moulues, le piment et les assaisonnements (bouillon cube, iru/dawadawa - si utilisé).
+
+        Laisser mijoter 15-20 minutes.
+
+        Ajouter les légumes-feuilles (ex: épinards ou Ugu) et laisser cuire encore 5 minutes.
+
+    origin: Nigeria (populaire à travers le pays, notamment chez les Yorubas).
+
+    preparation_time: 1h - 1h30

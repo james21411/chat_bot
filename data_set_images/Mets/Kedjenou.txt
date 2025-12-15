@@ -1,0 +1,21 @@
+name: Kedjenou
+
+description: Ragoût ivoirien (poulet ou pintade) cuit à l'étouffée dans une marmite en terre cuite (canari) ou une cocotte hermétique, avec des légumes (oignons, tomates, aubergines) et peu ou pas d'eau.
+
+recipe:
+
+    Couper le poulet en morceaux.
+
+    Hacher oignons, tomates, ail, gingembre et piment. Couper les aubergines en dés.
+
+    Mettre tous les ingrédients (poulet, légumes, épices - thym, laurier) dans une cocotte ou une marmite lourde.
+
+    Ajouter un très petit peu d'eau ou d'huile (les légumes vont rendre leur jus).
+
+    Couvrir hermétiquement (traditionnellement avec des feuilles de bananier, sinon un couvercle lourd ou du papier aluminium).
+
+    Laisser cuire à feu très doux pendant 45 min à 1h, en secouant la marmite de temps en temps (sans l'ouvrir) pour que ça n'attache pas.
+
+origin: Côte d'Ivoire.
+
+preparation_time: 1h - 1h30

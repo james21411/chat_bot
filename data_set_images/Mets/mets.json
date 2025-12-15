@@ -1,0 +1,263 @@
+[
+  {
+    "name": "Jollof_Rice",
+    "description": "Very popular West African rice dish, cooked in a sauce based on tomatoes, bell peppers, onions, and spices.",
+    "ingredients": [
+      "Tomatoes",
+      "Bell_Peppers",
+      "Onions",
+      "Chilies",
+      "Oil",
+      "Thyme",
+      "Curry",
+      "Bay_Leaf",
+      "Broth",
+      "Rice",
+      "Water"
+    ],
+    "recipe": [
+      "Prepare a sauce base by blending tomatoes, bell peppers, onions, and chilies.",
+      "Sauté sliced onions in oil, add tomato paste, then the blended sauce and spices (thyme, curry, bay leaf, bouillon cube).",
+      "Let the sauce simmer to reduce.",
+      "Add the rice (pre-washed) to the sauce, mix well.",
+      "Add enough broth or water just to cover the rice.",
+      "Cover tightly and let it cook over very low heat until the rice is done and has absorbed all the sauce."
+    ],
+    "origin": "Senegal",
+    "preparation_time": "1h15"
+  },
+  {
+    "name": "Fufu",
+    "description": "A compact and elastic dough or ball made from boiled and pounded tubers (cassava, yam, plantain) or diluted flours (corn, cassava). Served as a main accompaniment for sauces.",
+    "ingredients": [
+      "Cassava",
+      "Yams",
+      "Plantains",
+      "Flour",
+      "Corn",
+      "Water"
+    ],
+    "recipe": [
+      "(Traditional version) Peel, wash, and cut the tubers (e.g., cassava and plantains).",
+      "Boil them until tender.",
+      "Drain and pound vigorously in a mortar until a smooth and elastic dough is obtained, adding a little water if necessary.",
+      "(Flour version) Mix the flour (e.g., cassava or corn flour) with cold water.",
+      "Bring water to a boil, pour in the mixed flour/water and stir constantly with a wooden spatula over the heat until the dough thickens, becomes translucent, and pulls away from the sides."
+    ],
+    "origin": "Ghana",
+    "preparation_time": "45 min"
+  },
+  {
+    "name": "Ndolè",
+    "description": "A Cameroonian dish based on bitter leaves (ndolè), peanut paste, and often garnished with shrimp, smoked fish, or meat.",
+    "ingredients": [
+      "Ndolè",
+      "Meat",
+      "Fish",
+      "Peanuts",
+      "Garlic",
+      "Onions",
+      "Broth",
+      "Oil",
+      "Shrimp"
+    ],
+    "recipe": [
+      "Boil the ndolè leaves (fresh or dried) several times to remove bitterness, then drain and chop them.",
+      "Cook the meat or smoked fish. Reserve the broth.",
+      "Blend raw peanuts with garlic, onions, and a little water to obtain a paste.",
+      "Sauté sliced onions in oil.",
+      "Add the peanut paste and a little broth, cook for a few minutes, stirring.",
+      "Stir in the chopped ndolè leaves.",
+      "Add the meat/fish and shrimp.",
+      "Simmer over low heat for about 30-45 minutes until the sauce thickens."
+    ],
+    "origin": "Cameroon",
+    "preparation_time": "1h45"
+  },
+  {
+    "name": "Thieboudienne",
+    "description": "Senegal's national dish, it is a fish and rice dish cooked in a rich tomato sauce with various vegetables (cabbage, carrot, cassava, eggplant, okra...).",
+    "ingredients": [
+      "Fish",
+      "Chili",
+      "Garlic",
+      "Parsley",
+      "Pepper",
+      "Broth",
+      "Oil",
+      "Onions",
+      "Paste",
+      "Tomatoes",
+      "Water",
+      "Cabbage",
+      "Carrot",
+      "Cassava",
+      "Eggplant",
+      "Okra",
+      "Bay_Leaf",
+      "Nététou",
+      "Rice"
+    ],
+    "recipe": [
+      "Prepare a stuffing (\"Rof\") with chili, garlic, parsley, pepper, bouillon cube, and stuff pieces of fish (often thiof).",
+      "Fry the stuffed fish in oil, then set it aside.",
+      "In the same oil, sauté onions, garlic, then add tomato paste and let it \"brown\".",
+      "Add water, vegetables cut into large pieces, the fried fish, and spices (bay leaf, nététou - if used).",
+      "Let simmer until the vegetables and fish are cooked.",
+      "Remove the fish and vegetables.",
+      "Add the rice (often broken rice) to the remaining broth and let it steam until completely absorbed.",
+      "Serve the rice topped with the vegetables and fish."
+    ],
+    "origin": "Senegal",
+    "preparation_time": "2h30"
+  },
+  {
+    "name": "Egusi_Soup",
+    "description": "A thick Nigerian soup made with ground melon seeds (egusi), leafy vegetables (spinach, bitter leaves...), palm oil, and various types of meat and fish.",
+    "ingredients": [
+      "Egusi",
+      "Water",
+      "Onion",
+      "Palm_Oil",
+      "Broth",
+      "Meat",
+      "Fish",
+      "Crayfish",
+      "Chili",
+      "Iru",
+      "Spinach",
+      "Ugu"
+    ],
+    "recipe": [
+      "Grind the egusi seeds and form a paste with a little water or blended onion.",
+      "Heat the palm oil, fry the egusi paste in small balls or by stirring (lump or fried method).",
+      "Add the meat broth, pre-cooked meat and fish, ground crayfish, chili, and seasonings (bouillon cube, iru/dawadawa - if used).",
+      "Let simmer for 15-20 minutes.",
+      "Add the leafy vegetables (e.g., spinach or Ugu) and cook for another 5 minutes."
+    ],
+    "origin": "Nigeria",
+    "preparation_time": "1h15"
+  },
+  {
+    "name": "Attieke",
+    "description": "Fermented cassava semolina, steamed. A popular accompaniment in Côte d'Ivoire, often served with grilled fish or chicken and a tomato-onion sauce.",
+    "ingredients": [
+      "Cassava",
+      "Attiéké",
+      "Water",
+      "Salt",
+      "Oil"
+    ],
+    "recipe": [
+      "(Traditional) Grate cassava, let it ferment for a few days, press it to extract water, dry it, \"granulate\" it by hand, then steam it.",
+      "(Quick version - dry/pre-cooked attiéké) Rehydrate the dry attiéké with a little salted water and a drizzle of oil.",
+      "Separate grains by hand or with a fork.",
+      "Steam (in a couscoussier or microwave) for 5-10 minutes until hot and light."
+    ],
+    "origin": "Côte d'Ivoire",
+    "preparation_time": "20 min"
+  },
+  {
+    "name": "Banku_and_Tilapia",
+    "description": "A popular Ghanaian dish consisting of Banku (fermented corn and cassava dough) served with grilled Tilapia and a chili sauce (shito) or a tomato-onion sauce.",
+    "ingredients": [
+      "Corn",
+      "Cassava",
+      "Water",
+      "Salt",
+      "Tilapia",
+      "Ginger",
+      "Garlic",
+      "Onion",
+      "Chili"
+    ],
+    "recipe": [
+      "(Banku) Mix the fermented corn dough and cassava dough (or flours) with salted water.",
+      "Cook over medium heat, stirring constantly with a wooden spatula until the mixture thickens and becomes a smooth, cooked dough.",
+      "Form into balls.",
+      "(Tilapia) Clean, scale, and score the fish.",
+      "Marinate the fish with a spice blend (ginger, garlic, onion, chili, salt).",
+      "Grill the fish on the barbecue, in the oven, or in a pan until well cooked.",
+      "Serve the Banku with the grilled Tilapia and a chili/tomato sauce."
+    ],
+    "origin": "Ghana",
+    "preparation_time": "1h45"
+  },
+  {
+    "name": "Ewedu_Soup",
+    "description": "A viscous Nigerian soup based on jute leaves (Ewedu), typically served by the Yorubas with Gbegiri (bean soup) and Amala.",
+    "ingredients": [
+      "Ewedu",
+      "Water",
+      "Potash",
+      "Crayfish",
+      "Iru",
+      "Broth"
+    ],
+    "recipe": [
+      "Wash the Ewedu leaves and strip them from the stems.",
+      "Boil them in a little water with a bit of potash (kaun) to tenderize (optional).",
+      "Traditionally, mash the leaves with a special small broom (Ijabe) until a slimy texture is achieved. (Modern alternative: blend very briefly).",
+      "Add ground crayfish, Iru (fermented locust bean), and a bouillon cube.",
+      "Simmer for a few minutes (do not overcook to preserve the green color)."
+    ],
+    "origin": "Nigeria",
+    "preparation_time": "25 min"
+  },
+  {
+    "name": "Kedjenou",
+    "description": "An Ivorian stew (chicken or guinea fowl) cooked by steaming in a terracotta pot (canari) or an airtight cocotte, with vegetables (onions, tomatoes, eggplants) and little to no water.",
+    "ingredients": [
+      "Chicken",
+      "Guinea_Fowl",
+      "Onions",
+      "Tomatoes",
+      "Garlic",
+      "Ginger",
+      "Chili",
+      "Eggplants",
+      "Thyme",
+      "Bay_Leaf",
+      "Oil",
+      "Water"
+    ],
+    "recipe": [
+      "Cut the chicken into pieces.",
+      "Chop onions, tomatoes, garlic, ginger, and chili. Dice the eggplants.",
+      "Put all ingredients (chicken, vegetables, spices - thyme, bay leaf) into a cocotte or a heavy pot.",
+      "Add a very small amount of water or oil (the vegetables will release their juice).",
+      "Cover tightly (traditionally with banana leaves, otherwise a heavy lid or aluminum foil).",
+      "Cook over very low heat for 45 min to 1h, shaking the pot occasionally (without opening it) to prevent sticking."
+    ],
+    "origin": "Côte d'Ivoire",
+    "preparation_time": "1h15"
+  },
+  {
+    "name": "Saka_saka",
+    "description": "A stew made from pounded cassava leaves, simmered in palm oil with smoked fish, meat, onions, and sometimes peanut butter or coconut milk.",
+    "ingredients": [
+      "Cassava",
+      "Water",
+      "Onions",
+      "Garlic",
+      "Fish",
+      "Meat",
+      "Palm_Oil",
+      "Peanuts",
+      "Coconut",
+      "Salt",
+      "Chili",
+      "Broth"
+    ],
+    "recipe": [
+      "Wash and pound the cassava leaves very finely (or use already pounded frozen leaves).",
+      "Put the pounded leaves in a pot with a little water and boil them for a long time (at least 1 hour) to remove toxicity and tenderize them.",
+      "Add the onions, garlic, smoked fish (or pre-cooked meat), and palm oil.",
+      "Continue simmering over low heat for another 1 to 2 hours, stirring regularly.",
+      "(Optional) Add peanut butter or coconut milk towards the end to thicken.",
+      "Season with salt, chili, and bouillon cube."
+    ],
+    "origin": "RDC",
+    "preparation_time": "3h15"
+  }
+]
